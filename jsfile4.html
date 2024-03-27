@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            h1{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 40px;
+                color: crimson;
+                text-align: center;
+            }
+            .ques1{
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 22px;
+                margin-left: 480px;
+                margin-bottom: 50px;
+            }
+
+            .op{
+                font-size: 22px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                margin-left: 500px;
+                
+                border-radius: 5px;
+                height: 30px;
+                width: 500px;
+                
+                background-color: rgb(112, 109, 114);
+                padding-left: 10px;
+                
+
+
+            }
+            .op:hover{
+                background-color: aliceblue;
+                
+            }
+
+            .op1{
+                font-size: 22px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                margin-left: 500px;
+                
+                border-radius: 5px;
+                height: 30px;
+                width: 500px;
+                
+                background-color: rgb(112, 109, 114);
+                padding-left: 10px;
+                
+
+
+            }
+            .op1:hover{
+                background-color: aliceblue;
+                
+            }
+            .submit{
+                height: 30px;
+                width: 120px;
+                background-color: rgb(40, 191, 242);
+                font-size: 20px;
+                border: none;
+                border-radius: 7px;
+                margin-left: 890px;
+            }
+
+
+
+
+
+        </style>
+    
+    </head>
+    <body>
+        <h1>Quiz</h1>
+        <div class="ques1">
+            <p>
+                Question1
+
+            </p>
+        </div>
+        <div onclick="chooseOption(this.id)" id="option1" class="op"><p>option1</p></div><br>
+        <div onclick="chooseOption(this.id)" id="option2" class="op"><p>option2</p></div><br>
+        <div onclick="chooseOption(this.id)" id="option3" class="op"><p>option3</p></div><br>
+        <div onclick="chooseOption(this.id)" id="option4" class="op1"><p>option4</p></div><br>
+        <button onclick="nextPage()" class="submit">Next</button>
+<script>
+    
+    // const element1=document.getElementById('option');
+    // element1.addEventListener('click',chooseOption);
+    //   var answer;
+    const element1=document.getElementById('option2');
+    
+    
+    function chooseOption(user){
+        
+        const element2=document.getElementById(user);
+        if('element1'!=='element2'){
+        element2.style.backgroundColor="red";
+        document.getElementById("option2").style.backgroundColor="green";
+        }
+        else{
+            element2.style.backgroundColor="red";
+
+        }
+
+    }
+
+    function nextPage(){
+        location.replace('file:///C:/Users/student/Desktop/python/jsfile4.html');
+
+    }
+
+
+</script>
+    </body>
+</html>
